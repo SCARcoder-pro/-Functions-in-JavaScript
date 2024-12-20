@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scope of Variables</title>
+</head>
+
+<body>
+    <p style="color: darkorange;">A function can access variable defined inside the function</p>
+    <button type="button" onclick="myfunction()" style="background-color: aquamarine;">Click Me!</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var b = 5
+        function myfunction() {
+            var a = 4
+            document.getElementById("demo").innerHTML = b * a;
+        }
+        document.getElementById("Demo1").innerHTML = a;
+        document.getElementById("Demo1").innerHTML = b;
+    </script>
+</body>
+
+</html>
