@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplication</title>
+</head>
+
+<body>
+    <p>Multiplication using javascript</p>
+    <p id="demo"></p>
+    <button onclick="myfunction(5)" style="background-color: aquamarine;">Click Me!</button>
+    <script>
+        function myfunction(x, y) {
+            if (y == undefined) {
+                y = 6;
+            }
+            if (y == undefined) {
+                y = 2
+            }
+            document.write(x * y);
+            return x * y;
+        }
+        document.getElementById("demo").innerHTML = myfunction(5)
+    </script>
+</body>
+
+</html>
